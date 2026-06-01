@@ -1,8 +1,6 @@
 package utils;
 
 import java.util.concurrent.Callable;
-
-import javax.management.RuntimeErrorException;
 import models.Resultado;
 
 public class Bencgmarking {

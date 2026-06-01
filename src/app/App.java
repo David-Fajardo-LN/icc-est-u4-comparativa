@@ -3,7 +3,14 @@ import models.Persona;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        
+        Persona[] personas = generarPersonas(10_000);
+        Persona[] personas2 = personas.clone();
+        Persona[] personas3 = personas.clone();
+
+
+
+
     }
 
     public static Persona[] generarPersonas(int cantidad){
