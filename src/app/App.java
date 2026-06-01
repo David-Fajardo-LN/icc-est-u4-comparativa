@@ -15,6 +15,6 @@ public class App {
             personas[i] = new Persona(nombre, edad);
         }
 
-        return personas;
+        return personas ;
     }
 }
