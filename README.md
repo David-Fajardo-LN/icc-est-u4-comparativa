@@ -1,27 +1,21 @@
 ## EXPLICACION GENERAL
 El codigo busca mostrar en consola los tiempos que requieren los métodos insertion y quirck para organizar una lista en dos formas, completamente desordenada y otra en la que solo falta el ultimo elemento por ordenar. Para ello, usa un controlador que contiene ambos ordenamientos y se usa dentro de otro metodo llamado resultados que extrae la informacion nesesaria de la ejecucion para mostrar los datos en la consola.
 ## RESULTADOS OBTENIDOS
-Tabla 1: ESCENARIO 1: arreglo completamente desordenado
-+------------------+------------------+------------------+----------------------+-----------------------------------------+
-| Tamaño de muestra| Tiempo Inserción | Tiempo QuickSort | Algoritmo más rápido | Observación                             |
-+------------------+------------------+------------------+----------------------+-----------------------------------------+
-| 10.000           | 29,77 ms         | 7,06 ms          | QuickSort            | QuirkSort es 4 veses mas rapido         |
-+------------------+------------------+------------------+----------------------+-----------------------------------------+
-| 50.000           | 879,05 ms        | 113,41 ms        | QuirkSort            | QuirkSort es 7 veses mas rapido         |
-+------------------+------------------+------------------+----------------------+-----------------------------------------+
-| 100.000          | 4173,97 ms       | 522,26 ms        | QuirkSort            | QuirkSort es 8 veses mas rapido         |
-+------------------+------------------+------------------+----------------------+-----------------------------------------+
+### Tabla 1: ESCENARIO 1: arreglo completamente desordenado
 
-Tabla 2: ESCENARIO 2: arreglo casi ordenado
-+------------------+------------------+------------------+----------------------+-----------------------------------------+
-| Tamaño de muestra| Tiempo Inserción | Tiempo QuickSort | Algoritmo más rápido | Observación                             |
-+------------------+------------------+------------------+----------------------+-----------------------------------------+
-| 10.000           | 0,11 ms          | 7,06 ms          | InsertionSort        | InsertionSort es 64 veses mas rapido    |
-+------------------+------------------+------------------+----------------------+-----------------------------------------+
-| 50.000           | 0,32 ms          | 125,14 ms        | InsertionSort        | InsertionSort es 391 veses mas rapido   |
-+------------------+------------------+------------------+----------------------+-----------------------------------------+
-| 100.000          | 0,77 ms          | 601,44 ms        | InsertionSort        | InsertionSort es 781 veses mas rapido   |
-+------------------+------------------+------------------+----------------------+-----------------------------------------+
+| Tamaño de muestra | Tiempo Inserción | Tiempo QuickSort | Algoritmo más rápido | Observación |
+| :--- | :--- | :--- | :--- | :--- |
+| 10.000 | 29,77 ms | 7,06 ms | QuickSort | QuickSort es 4 veces más rápido |
+| 50.000 | 879,05 ms | 113,41 ms | QuickSort | QuickSort es 7 veces más rápido |
+| 100.000 | 4173,97 ms | 522,26 ms | QuickSort | QuickSort es 8 veces más rápido |
+
+### Tabla 2: ESCENARIO 2: arreglo casi ordenado
+
+| Tamaño de muestra | Tiempo Inserción | Tiempo QuickSort | Algoritmo más rápido | Observación |
+| :--- | :--- | :--- | :--- | :--- |
+| 10.000 | 0,11 ms | 7,06 ms | InsertionSort | InsertionSort es 64 veces más rápido |
+| 50.000 | 0,32 ms | 125,14 ms | InsertionSort | InsertionSort es 391 veces más rápido |
+| 100.000 | 0,77 ms | 601,44 ms | InsertionSort | InsertionSort es 781 veces más rápido |
 
 ## ANALISIS Y PREGUNTAS
 1. ¿Qué algoritmo fue más rápido en el escenario desordenado?
