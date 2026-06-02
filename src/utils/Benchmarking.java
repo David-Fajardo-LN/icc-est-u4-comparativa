@@ -3,7 +3,7 @@ package utils;
 import java.util.concurrent.Callable;
 import models.Resultado;
 
-public class Bencgmarking {
+public class Benchmarking {
     public static Resultado mediTiempo( Callable<Void> funcion, String algoritmo, String escenario, int sample){
 
         try {

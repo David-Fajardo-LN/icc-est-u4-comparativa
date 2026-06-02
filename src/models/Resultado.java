@@ -6,14 +6,18 @@ public class Resultado {
     private int sample;
     private double tiempoNano;
     private double tiempoMillis;
+    
     public Resultado(String algoritmo, String escenario, int sample, double tiempoNano) {
         this.algoritmo = algoritmo;
         this.escenario = escenario;
         this.sample = sample;
         this.tiempoNano = tiempoNano;
-        this.tiempoMillis = tiempoMillis / 1_000_000_0;
+        this.tiempoMillis = tiempoNano / 1_000_000_0;
     }
     
-
-    
+    @Override
+    public String toString() {
+        return String.format(
+            "%-30s | %-10s | %-7d | %.2f ms",escenario,algoritmo,sample,tiempoMillis);
+    }
 }

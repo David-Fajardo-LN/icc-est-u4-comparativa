@@ -32,9 +32,4 @@ public class Persona {
         
         return valorNombre;
     }
-
-
-
-    
-
 }
