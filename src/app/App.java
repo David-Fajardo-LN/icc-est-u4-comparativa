@@ -12,6 +12,7 @@ public class App {
 
         SortPersonMethods controller = new SortPersonMethods();
         Persona[] personas = generarPersonas(10000);
+        
         Persona[] personasInsercion = personas.clone();
         Persona[] personasQuick = personas.clone();
 
@@ -54,12 +55,12 @@ public class App {
             },
             "Insercion",
             "Casi ordenado + 1 persona",
-            personasInsercion.length
+            personasInsercion2.length
         );
 
         Persona[] personasQuick2 = generarPersonas(10_001);
         controller.quickSort(personasQuick2, 0, personasQuick2.length-1);
-        personasQuick[personasQuick.length - 1] = new Persona("Persona21", 12);
+        personasQuick2[personasQuick2.length - 1] = new Persona("Persona21", 12);
 
         Resultado r4 = Benchmarking.mediTiempo(
             new Callable<Void>() {
@@ -75,7 +76,7 @@ public class App {
             },
             "QuickSort",
             "Casi ordenado + 1 persona",
-            personasQuick.length
+            personasQuick2.length
         );
         System.out.printf("%-30s | %-10s | %-7s | %s%n","ESCENARIO 10 000","ALGORITMO","MUESTRA","TIEMPO");
         System.out.println("----------------------------------------------------------------");
